@@ -3,21 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cordeiro Restaurante</title>
+    <meta name="title" content="Restaurante Cordeiro" />
+    <meta itemprop="name" content="Restaurante Cordeiro" />
+    <meta property="og:title" content="Restaurante Cordeiro" />
+    <meta name="description" content="Restaurante de Mané, com precinho de Mané&#xA;Junto ao Canto e o Porto da Lagoa, Campeche e Rio Tavares&#xA;Restaurante na Lagoa da Conceição&#xA;Restaurante em Florianópolis Ilha de SC&#xA;Especializado em frutos do Mar" />
+    <meta itemprop="description" content="Restaurante de Mané, com precinho de Mané&#xA;Junto ao Canto e o Porto da Lagoa, Campeche e Rio Tavares&#xA;Restaurante na Lagoa da Conceição&#xA;Restaurante em Florianópolis Ilha de SC&#xA;Especializado em frutos do Mar" />
+    <meta id="meta-tag-description" property="og:description" content="Restaurante de Mané, com precinho de Mané&#xA;Junto ao Canto e o Porto da Lagoa, Campeche e Rio Tavares&#xA;Restaurante na Lagoa da Conceição&#xA;Restaurante em Florianópolis Ilha de SC&#xA;Especializado em frutos do Mar" />
+
+    <title>Restaurante Cordeiro</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/poppins.css" />
+    <link rel="stylesheet" href="css/fonts/style.css">
     <script src="/js/script.js"></script>
   </head>
   <body>
     <header>
-      <a class="logo" href="http://">Cordeiro<span>.</span></a>
+      <div>
+        <a class="logo" href="/">Cordeiro<span>.</span></a>
+        
+      </div>
       <div class="menu_toggle" onclick="toogleMenu();"></div>
       <ul class="navigation">
-        <li><a href="#banner" onclick="toogleMenu();">Inicio</a></li>
-        <li><a href="#abous" onclick="toogleMenu();">Sobre</a></li>
+        <li><a href="#banner" onclick="toogleMenu();">Início</a></li>
+        <li><a href="#about" onclick="toogleMenu();">Sobre</a></li>
         <li><a href="#menu" onclick="toogleMenu();">Cadápio</a></li>
         <li><a href="#expert" onclick="toogleMenu();">Especialistas</a></li>
-        <li><a href="#depoiments" onclick="toogleMenu();">Depoimentos</a></li>
+        <li><a href="#testimonials" onclick="toogleMenu();">Depoimentos</a></li>
         <li><a href="#contact" onclick="toogleMenu();">Contato</a></li>
       </ul>
     </header>
@@ -32,11 +43,11 @@
             reprehenderit adipisci dignissimos vel accusantium debitis et animi
             fuga, perspiciatis quos vitae.
           </p>
-          <a href="#menu" class="btn">Nosso Cardápio</a>
+          <a class="btn" href="#menu" >Nosso Cardápio</a>
         </div>
       </section>
 
-      <section class="abou" id="abous">
+      <section class="about" id="about">
         <div class="row">
           <div class="col50">
             <h2 class="title_text">Quem <span>S</span>omos</h2>
@@ -113,7 +124,7 @@
 
       <section class="expert" id="expert">
         <div class="title">
-          <h2 class="title_text">Nossos <span>E</span>pecialista em cozinha</h2>
+          <h2 class="title_text">Nossos <span>E</span>pecialista em cozinhar</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing e.</p>
         </div>
 
@@ -156,7 +167,7 @@
         </div>
       </section>
 
-      <section class="depoiments" id="depoiments">
+      <section class="testimonials" id="testimonials">
         <div class="title white">
           <h2 class="title_text">Eles <span>F</span>alaram sobre nós</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing e.</p>
@@ -211,10 +222,10 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing e.</p>
         </div>
 
-        <div class="content_form">
+        <div class="contact_form">
           <h3>Envie-nos uma mensagem</h3>
           <div class="input_box">
-            <input type="text" name="name" id="name" placeholder="nome" />
+            <input type="text" name="name" id="name" placeholder="Nome" />
           </div>
           <div class="input_box">
             <input type="email" name="email" id="email" placeholder="E-mail" />
@@ -228,18 +239,46 @@
             ></textarea>
           </div>
           <div class="input_box">
-            <input type="submit" name="name" id="name" />
+            <input type="submit" value="Enviar" />
           </div>
         </div>
       </section>
+
     </main>
-    <footer>
+
+    <!-- <footer>
       <div class="copyright_text">
         <p>
           æ Copyright 2021 Cordeiro Restaurante - developed by
           <a href="#">Cícero Santos</a>
         </p>
       </div>
+    </footer> -->
+
+    <div class="divider-1"></div>
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Restaurante Cordeiro<span>.</span></a>
+          <p>©2021 Restaurante Cordeiro</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+  
+        <div class="social">
+          <a href="https://instagram.com" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="icon-facebook"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" >
+            <i class="icon-youtube"></i >
+          </a>
+        </div>
+        
+      </div>
     </footer>
+  
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
   </body>
 </html>
